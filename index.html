@@ -47,6 +47,33 @@
   }
 </style>
 </head>
+  <body>
+  <h1>Happy Birthday ❤️</h1>
+  <p>You are my world 🌎</p>
+
+  <img src="photo1.jpg">
+  <img src="photo2.jpg">
+
+  <!-- 🎶 Music and Script add here -->
+  <audio id="bgmusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="playBtn">▶ Play Song ❤️</button>
+
+  <script>
+    const music = document.getElementById("bgmusic");
+    const btn = document.getElementById("playBtn");
+
+    btn.addEventListener("click", () => {
+      music.play();
+      btn.innerText = "🎶 Playing...";
+      btn.disabled = true;
+    });
+  </script>
+</body>
+</html>
+
 <body>
   <h1>Happy Birthday, My Love ❤️</h1>
   <p>Every smile of yours is my sunshine ☀️</p>
@@ -106,6 +133,7 @@
     }
   });
 </script>
+
 
 
 
