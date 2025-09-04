@@ -98,13 +98,6 @@
 <script>
   const music = document.getElementById("bgmusic");
 
-  // Try to start muted on load
-  window.addEventListener("load", () => {
-    music.play().catch(() => {
-      console.log("Autoplay blocked until user interacts.");
-    });
-  });
-
   // First user interaction → unmute automatically
   document.addEventListener("click", () => {
     if (music.muted) {
@@ -113,6 +106,7 @@
     }
   });
 </script>
+
 
 
 
